@@ -69,42 +69,26 @@ function Model(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Cube002.geometry}
-        material={nodes.Cube002.material}
+        geometry={nodes.frontStairs.geometry}
+        material={nodes.frontStairs.material}
         position={[-0.2, -0.32, 6.57]}
         scale={[6.81, 0.25, 0.75]}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Cube003.geometry}
-        material={nodes.Cube003.material}
-        position={[-0.19, -0.09, -0.39]}
-        scale={[6.81, 0.25, 0.75]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube004.geometry}
-        material={materials.Wall}
-        position={[-0.19, -0.09, -0.39]}
-        scale={[6.81, 0.25, 0.75]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube005.geometry}
-        material={materials.Wall}
-        position={[8.53, -1, 8.85]}
-        scale={[6.81, 0.25, 0.75]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube006.geometry}
-        material={materials.Wall}
+        geometry={nodes.stairsWall.geometry}
+        material={materials.Ground}
         position={[-8.9, -1, 8.85]}
         scale={[6.81, 0.25, 0.75]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.UGFloor.geometry}
+        material={materials.Floor2}
+        position={[-0.19, -3.26, -0.29]}
+        scale={[36.09, 0.16, 21.61]}
       />
       <mesh
         castShadow
