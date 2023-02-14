@@ -16,7 +16,7 @@ function Model(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.BS.geometry}
+        geometry={nodes.BS001.geometry}
         material={materials.Beam}
         position={[7.44, 0.22, -5.44]}
         scale={[1, 0.76, 1]}
@@ -26,7 +26,7 @@ function Model(props) {
         receiveShadow
         geometry={nodes.Ground.geometry}
         material={materials.Ground}
-        position={[-0.16, -3.09, 0.27]}
+        position={[-0.19, -0.09, -0.39]}
         scale={37.1}
       />
       <group position={[-0.19, -0.09, -0.39]}>
@@ -53,10 +53,58 @@ function Model(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.BS001.geometry}
+        geometry={nodes.BS.geometry}
         material={materials.Beam}
         position={[-0.19, -0.09, -0.39]}
         scale={[1, 0.76, 1]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Stairs.geometry}
+        material={materials.Wall}
+        position={[-0.19, -0.09, -0.39]}
+        scale={[1, 0.85, 1]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube002.geometry}
+        material={nodes.Cube002.material}
+        position={[-0.2, -0.32, 6.57]}
+        scale={[6.81, 0.25, 0.75]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube003.geometry}
+        material={nodes.Cube003.material}
+        position={[-0.19, -0.09, -0.39]}
+        scale={[6.81, 0.25, 0.75]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube004.geometry}
+        material={materials.Wall}
+        position={[-0.19, -0.09, -0.39]}
+        scale={[6.81, 0.25, 0.75]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube005.geometry}
+        material={materials.Wall}
+        position={[8.53, -1, 8.85]}
+        scale={[6.81, 0.25, 0.75]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube006.geometry}
+        material={materials.Wall}
+        position={[-8.9, -1, 8.85]}
+        scale={[6.81, 0.25, 0.75]}
       />
       <mesh
         castShadow
