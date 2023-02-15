@@ -102,7 +102,7 @@ function Model(props) {
         receiveShadow
         geometry={nodes.frontStairs001.geometry}
         material={materials.stairs}
-        position={[-12.18, -1.61, 10.68]}
+        position={[-12.26, -0.85, 7.48]}
         scale={[6.81, 0.25, 0.75]}
       />
       <mesh
@@ -148,6 +148,36 @@ function Model(props) {
         material={materials.Beam}
         position={[-11.43, -1.69, 12.21]}
         scale={[0.75, 10, 0.75]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.MainWall_1st001.geometry}
+        material={materials.Wall}
+        position={[-0.19, 5.02, -8.45]}
+        scale={[1, 0.75, 1]}
+      />
+      <group position={[-0.19, 8.75, -0.39]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane002.geometry}
+          material={materials.Floor1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane002_1.geometry}
+          material={materials.Floor2}
+        />
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube.geometry}
+        material={nodes.Cube.material}
+        position={[-13.41, -1.69, 4.12]}
+        scale={[0.25, 2, 1]}
       />
     </group>
   );
