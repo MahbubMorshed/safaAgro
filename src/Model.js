@@ -70,7 +70,7 @@ function Model(props) {
         castShadow
         receiveShadow
         geometry={nodes.frontStairs.geometry}
-        material={nodes.frontStairs.material}
+        material={materials.stairs}
         position={[-0.2, -0.32, 6.57]}
         scale={[6.81, 0.25, 0.75]}
       />
@@ -96,6 +96,58 @@ function Model(props) {
         geometry={nodes.MainWall_1st.geometry}
         material={materials.Wall}
         position={[-0.19, -0.09, -0.39]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.frontStairs001.geometry}
+        material={materials.stairs}
+        position={[-12.18, -1.61, 10.68]}
+        scale={[6.81, 0.25, 0.75]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.stairs.geometry}
+        material={materials.stairs}
+        position={[-13.56, 2.52, 7.39]}
+        rotation={[Math.PI, 0, Math.PI]}
+      />
+      <group position={[-0.19, 4.94, -0.39]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane001.geometry}
+          material={materials.Floor1}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane001_1.geometry}
+          material={materials.Floor2}
+        />
+      </group>
+      <group position={[-14.25, 4.79, 9.39]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006.geometry}
+          material={materials.Lift}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube006_1.geometry}
+          material={materials.stairs}
+        />
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.liftBeam.geometry}
+        material={materials.Beam}
+        position={[-11.43, -1.69, 12.21]}
+        scale={[0.75, 10, 0.75]}
       />
     </group>
   );
